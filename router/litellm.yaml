@@ -1,0 +1,38 @@
+# LiteLLM Router Config — Oh My Fucking Pi
+# Model = TERVERIFIKASI eksis di OpenRouter (2026-08-18). Bukan fiksi.
+# Jalankan: litellm --config router/litellm.yaml
+
+model_list:
+  # ── Uncensored / abliterated-ish (red-team, jailbreak research, roleplay) ──
+  - model_name: uncensored
+    litellm_params:
+      model: openrouter/sao10k/l3.3-euryale-70b
+      api_key: os.environ/OPENROUTER_API_KEY
+  - model_name: uncensored-fast
+    litellm_params:
+      model: openrouter/nousresearch/hermes-4-70b
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  # ── Security-focused ──
+  - model_name: security
+    litellm_params:
+      model: openrouter/cognitivecomputations/dolphin-mistral-24b-venice-edition
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  # ── Coding (normal, bukan abliterated — lebih kuat) ──
+  - model_name: coding
+    litellm_params:
+      model: openrouter/nousresearch/hermes-3-llama-3.1-70b
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  # ── Cheap fallback ──
+  - model_name: cheap
+    litellm_params:
+      model: openrouter/microsoft/wizardlm-2-8x22b
+      api_key: os.environ/OPENROUTER_API_KEY
+
+# ── Fallback chain global ──
+router_settings:
+  fallbacks:
+    uncensored: [uncensored-fast, cheap]
+    coding: [cheap]
