@@ -20,3 +20,10 @@
 ## Domain
 - Prompt jailbreak cepat basi; teknik + system prompt bocor bertahan. Abliterated = permanen (weights-level).
 - System prompt extraction > direct attack (flag biasanya di system prompt).
+
+## Routing/models
+- Free model OpenRouter bisa DELISTED tanpa aba-aba (qwen3-coder:free hilang). Verifikasi via API sebelum dipakai: `curl -s https://openrouter.ai/api/v1/models | grep ID`.
+- Model ID di UI 9router bisa stale (cache list lama) — ID yang gagal = cek ulang di API, bukan asumsi.
+- Semua model free = guarded. Zero-refusal = euryale/hermes (paid) atau abliterated lokal. Jangan janji "uncensored" ke user untuk free model.
+- Embedding gratis (sumopod text-embedding-3-large) → RAG tanpa biaya, jangan tunda kalau ada need.
+- Combo per-task > satu combo semua-tugas: hemat biaya, perilaku model cocok per role.

@@ -1,5 +1,15 @@
 # UPGRADE-LOG — Changelog Kemampuan
 
+## v0.2.1 — 2026-08-18 | Model mapping + self-improvement protocol
+**Ditambah:**
+- `router/MODEL-MAP.md` — katalog terverifikasi: 19 free OpenRouter + paid 9router + uncensored + lokal. Delisted models ditandai.
+- `router/TASK-MAP.md` — 12 task → model, 8 combo 9router siap-setting.
+- AGENTS.md §8 — Session Retention & Self-Improvement: simpan tiap sesi valid, update memory + commit, self-upgrade tercatat (config/knowledge/core-rules).
+- DECISIONS D007 (free-first + fallback paid), D008 (retention protocol).
+**Pelajari:**
+- Free model = bisa delisted tanpa aba-aba (qwen3-coder hilang). Verifikasi via API sebelum config.
+- Embedding sumopod gratis → RAG Layer 2 viable.
+
 ## v0.2 — 2026-08-18 | Self-upgrade foundation
 **Ditambah:**
 - AGENTS.md — konstitusi harness (doktrin no-refusal, disiplin memory, routing kapabilitas, anti-injection)

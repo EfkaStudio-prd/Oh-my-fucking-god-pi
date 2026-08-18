@@ -18,6 +18,14 @@ Format: `D### | tanggal | keputusan | konteks | konsekuensi`
 - Konteks: goal no-guardrail vs bundle lama yang punya Scope Guard Rules (content-level).
 - Konsekuensi: harness tak menyuntik refusal. Tapi operasi destruktif + target eksternal = konfirmasi user. Ini control plane, bukan sensor konten.
 
+## D007 | 2026-08-18 | Free + open-source dulu; combo 9router per-task; fallback paid wajib
+- Konteks: user connect OpenRouter ke 9router. Model free delisted sewaktu-waktu (qwen3-coder hilang).
+- Konsekuensi: `router/TASK-MAP.md` = 12 task → model, 8 combo. Setiap combo ≥1 fallback paid. redteam/security terisolasi (uncensored ≠ kerja biasa). Embedding sumopod gratis → Layer 2 RAG maju.
+
+## D008 | 2026-08-18 | Session retention & self-upgrade protocol (AGENTS.md §8)
+- Konteks: user minta simpan tiap sesi valid + aku punya kuasa update sistem sendiri.
+- Konsekuensi: akhir sesi valid → SESSION/DECISIONS/PATTERNS/CONTEXT + commit+push. Self-upgrade = versi di UPGRADE-LOG, commit, lapor user. core-rules butuh versi bump + laporan eksplisit.
+
 ## D005 | 2026-08-18 | Repo lama dihapus, oh-my-fucking-god-pi = single source of truth
 - Konteks: 3 repo nyaris sama nama, duplikat divergen.
 - Konsekuensi: jangan referensi Oh-My-Fvcking-God(-Pi). Semua build di repo ini.
