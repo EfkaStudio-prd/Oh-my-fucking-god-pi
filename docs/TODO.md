@@ -12,8 +12,13 @@ Status: 2026-08-18 (re-audit pasca cleanup repo lama)
 - [x] Memory Layer 1 aktif (CONTEXT/DECISIONS/PATTERNS/SESSION)
 - [x] 9Router service jalan (docker, localhost:20128, 136 model)
 - [x] pi → 9Router end-to-end verified (PI_PROVIDER=9router, PI_MODEL=sumopod/deepseek-v4-flash → chat OK)
+- [x] **Combo mapping**: `router/COMBO-MAP.md` (13 combo, free-first, harga promo verified)
+- [x] **8 combo di 9Router** (Coding, Deep-Coding, Planning, Research, Review, worker, Embed, Judge) → daftar di `~/.pi/agent/models.json`
+- [x] **Subagent system AKTIF**: 8 agent per task (scout/planner/engineer/power-worker/researcher/reviewer/judge/worker) + 4 workflow (`/implement`, `/deep-implement`, `/research`, `/review`)
+- [x] End-to-end subagent verified (scout → combo worker)
 
-## Phase 2 — Router & Model
+## Phase 2 — Router & Model (sisa)
+- [ ] Buat 5 combo sisanya di 9Router: `Parallel`, `Vision`, `Trivial`, `Security`, `Redteam` → daftar ke models.json + agent-nya
 - [ ] **OpenRouter API key asli** — user supply; litellm.yaml masih placeholder
   - [ ] Isi `router/.env` (dari .env.example) → key nyata
   - [ ] `litellm --config router/litellm.yaml --port 4000` jalan

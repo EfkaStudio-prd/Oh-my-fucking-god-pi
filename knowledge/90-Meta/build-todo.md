@@ -1,32 +1,31 @@
 # Build Todo — Oh My Fucking Pi
 
-Status: 2026-08-18
+Status: 2026-08-18 (sync dengan docs/TODO.md)
 
-## Done
+## Done (terverifikasi live)
 - [x] Obsidian v1.13.7 installed (WSLg, ~/.local/bin/obsidian, desktop entry)
-- [x] Vault dibuat: ~/ObsidianVault (7 folder, linked notes)
+- [x] Vault dibuat + di-link ke git (persistence layer 1, pushed)
 - [x] Knowledge base: OBLITERATUS, pliny, jailbreak ecosystem, teknik, arsitektur, memory, model catalog, labs, taksonomi, resources
+- [x] Repo Oh-my-fucking-god-pi: struktur + docs + push (main)
+- [x] Audit repo lama (D003-D005) → dihapus, fresh build
+- [x] AGENTS.md persona harness (GODMODE, tanpa guardrail, §8 self-upgrade)
+- [x] Memory Layer 1 aktif (CONTEXT/DECISIONS/SESSION/PATTERNS)
+- [x] pi custom-provider → 9Router (PI_PROVIDER=9router, live chat OK)
+- [x] Combo mapping + 8 combo 9Router + daftar di models.json pi
+- [x] Subagent system: 8 agent per-tugas + 4 workflow chain ([[model-routing]])
+- [x] End-to-end subagent verified (scout → combo worker)
 
-## Phase 1 — Fondasi
-- [ ] Repo Oh-my-fucking-god-pi: clone, struktur, isi docs (README, ARCHITECTURE, TODO, RESOURCES), push
-- [ ] Vault di-link ke git (persistence layer 1)
-- [ ] Baca ~/Oh-My-Fvcking-God (GOLDEN_CODE_MASTER_STACK.md, Router Plan OMFG.txt) — adopsi ke arsitektur
-- [ ] Baca ~/OMFG + ~/9router — audit router plan yang sudah ada
-
-## Phase 2 — Router & Model
-- [ ] OpenRouter API key
-- [ ] LiteLLM config: uncensored (openrouter/sao10k/l3.3-euryale-70b) + coding (model kuat)
-- [ ] pi custom-provider config (PI_PROVIDER/PI_MODEL)
-- [ ] Uji: pi + abliterated model → chat tanpa refusal
-- [ ] Uji lokal: ollama + glm-4.7-flash-abliterated:q8_0 (kalau muat) atau failspy/Phi-3.5-mini
+## Phase 2 — Router & Model (sisa)
+- [ ] (SKIP sementara) 5 combo sisa: Parallel, Vision, Trivial, Security, Redteam
+- [ ] OpenRouter API key asli → isi litellm.yaml → uji uncensored (euryale-70b) tanpa refusal
+- [ ] Uji lokal: install ollama (~1GB) + failspy/Phi-3.5-mini-abliterated (3.8B Q4)
 
 ## Phase 3 — Harness hardening
-- [ ] AGENTS.md persona harness (GODMODE, tanpa guardrail)
 - [ ] Defense: anti indirect prompt injection (dari teknik yang dipelajari)
-- [ ] Toolchain red-team: integrasi target (ai-goat local)
-- [ ] Eval: HackAPrompt dataset (subset) untuk ukur capability
+- [ ] Integrasi target red-team lokal (ai-goat)
+- [ ] Eval dengan HackAPrompt dataset subset
 
-## Phase 4 — Memory (upgrade path)
-- [ ] Layer 1 aktif: vault + git
-- [ ] Layer 2 (nanti): sqlite-vec + Ollama nomic-embed — saat notes > 2-3MB
-- [ ] Layer 3 (postpone): Kuzu graph — hanya kalau butuh multi-hop reasoning
+## Phase 4 — Memory
+- [x] Layer 1 aktif (vault + git + memory/)
+- [ ] Layer 2: sqlite-vec + Ollama nomic-embed (saat notes > 2-3MB)
+- [ ] Layer 3: Kuzu graph (postpone — hanya jika butuh multi-hop reasoning)

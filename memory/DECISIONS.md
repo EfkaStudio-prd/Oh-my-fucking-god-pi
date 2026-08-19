@@ -29,3 +29,11 @@ Format: `D### | tanggal | keputusan | konteks | konsekuensi`
 ## D005 | 2026-08-18 | Repo lama dihapus, oh-my-fucking-god-pi = single source of truth
 - Konteks: 3 repo nyaris sama nama, duplikat divergen.
 - Konsekuensi: jangan referensi Oh-My-Fvcking-God(-Pi). Semua build di repo ini.
+
+## D009 | 2026-08-18 | Combo naming = per-tugas, bukan per-model; free-first
+- Konteks: combo 9Router harus tahan model diganti/delisted. Nama per-model mati saat model diubah.
+- Konsekuensi: `COMBO-MAP.md` 13 combo bernama per-tugas (coding, planning, review...). Chain = free → paid murah → paid kuat. Tiap combo ≥1 fallback paid.
+
+## D010 | 2026-08-18 | Subagent = task-based, model via combo; agent def versioned di repo
+- Konteks: pi tak punya subagent bawaan; butuh delegate per-task sesuai routing model.
+- Konsekuensi: extension `subagent/` + 8 agent (`router/agents/` = source of truth, symlink ke `~/.pi/agent/agents/`). Agent minta combo (bukan hardcode model) → 9Router resolve. Edit agent = edit repo, berlaku tanpa restart (discover fresh).

@@ -10,6 +10,7 @@
 - [[techniques]] — teknik jailbreak/prompt injection (metodologi yang bertahan)
 - [[architecture]] — keputusan arsitektur harness
 - [[memory-persistence]] — rekomendasi memory/retrieval
+- [[model-routing]] — combo 9Router + subagent system (AKTIF)
 - [[abliterated-catalog]] — katalog model abliterated + provider
 - [[labs-targets]] — target latihan red-team (self-hosted + online)
 - [[taxonomies]] — taksonomi teknik (Pangea 163+, 0din)
@@ -28,6 +29,7 @@
 
 - [x] Obsidian installed (WSLg, AppImage v1.13.7)
 - [x] Vault + knowledge base
+- [x] Combo 9Router + subagent system (8 agent, 4 workflow) — lihat [[model-routing]]
 - [ ] Repo Oh-my-fucking-god-pi diisi & push
 - [ ] Router config (OpenRouter via LiteLLM/pi)
 - [ ] Fork pi / custom provider
